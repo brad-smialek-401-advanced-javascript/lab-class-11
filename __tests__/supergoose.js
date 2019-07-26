@@ -20,6 +20,8 @@ supergoose.server = (server) => supertest(server);
 /**
  * Typically used in Jest beforeAll hook
  */
+
+
 supergoose.startDB = async () => {
   
   mongoServer = new MongoMemoryServer();
@@ -45,6 +47,7 @@ supergoose.stopDB = () => {
 };
 
 // Just so that it can live in the tests folder
+
 describe('supergoose', () => {
   it('is super', () => {
     expect(true).toBeTruthy();

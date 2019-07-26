@@ -25,4 +25,6 @@ authRouter.post('/signin', auth, (req, res, next) => {
   res.send(req.token);
 });
 
+
+
 module.exports = authRouter;
